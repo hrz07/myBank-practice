@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>MyBank</title>
 </head>
 <body>
-    <h1>Bank</h1>
+    <header>
+        <h1 class="text-5xl text-center my-12 font-bold text-indigo-800">Lets get some money !!!</h1>
+    </header>
+
+    <main class="w-3/4 mx-auto">
+        <div class="grid grid-cols-3 gap-4 text-center">
+            <div class="bg-green-200 p-6 rounded-lg">
+                <h2 class="text-xl ">Deposit</h2>
+               <h3>$<span class="text-3xl font-bold">00</span></h3> 
+            </div>
+            <div class="bg-rose-200 p-6 rounded-lg">
+                <h2 class="text-xl">Withdraw</h2>
+                <h3>$<span class="text-3xl font-bold">00</span></h3> 
+            </div>
+            <div class="bg-sky-200 p-6 rounded-lg">
+                <h2 class="text-xl">Account</h2>
+                <h3>$<span class="text-3xl font-bold">1240</span></h3> 
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 mt-5">
+            <div class="bg-amber-200 p-8 rounded">
+                <h2 class="text-xl mb-2 text-black-600 font-semibold">Enter Your Deposit Amound</h2>
+                <input class="border border-cyan-600 block w-3/4 p-1 mb-2 rounded" placeholder="Enter Deposit Amount" type="text">
+                <button class="font-bold text-black-600 border border-black px-4 py-1 rounded hover:bg-black hover:text-white">Deposit</button>
+            </div>
+            <div class="bg-violet-200 p-8 rounded">
+                <h2 class="text-xl mb-2 text-black-600 font-semibold">Enter Your Withdraw Amound</h2>
+                <input class="border border-cyan-600 block w-3/4 p-1 mb-2 rounded" placeholder="Enter Withdraw Amount" type="text">
+                <button class="font-bold text-black-600 border border-black px-4 py-1 rounded hover:bg-black hover:text-white">Withdraw</button>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./bank.js"></script>
 </body>
 </html>
